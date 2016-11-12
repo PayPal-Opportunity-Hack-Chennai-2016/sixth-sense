@@ -12,7 +12,7 @@ var routes = require('./routes');
 
 app.set('views', __dirname + '/public/views');
 app.set('view engine', 'ejs');
-app.use(express.static("./public"));
+app.use(express.static(__dirname+'/public'));
 
 
 
