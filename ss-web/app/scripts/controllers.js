@@ -4,7 +4,7 @@
 
 angular.module('angularRestfulAuth')
     .controller('HomeCtrl', ['$rootScope', '$scope', '$location', '$localStorage', 'Main', function($rootScope, $scope, $location, $localStorage, Main) {
-
+        $scope.isAuthenticated = false;
         $scope.signin = function() {
             var formData = {
                 email: $scope.email,
@@ -15,8 +15,8 @@ angular.module('angularRestfulAuth')
                 if (res.type == false) {
                     alert(res.data)    
                 } else {
-                    $localStorage.token = res.data.token;
-                    window.location = "/";    
+                    $localStorage.token = res.data.token;                      
+                    $scope.isAutheticated();
                 }
             }, function() {
                 $rootScope.error = 'Failed to signin';
@@ -34,7 +34,7 @@ angular.module('angularRestfulAuth')
                     alert(res.data)
                 } else {
                     $localStorage.token = res.data.token;
-                    window.location = "/"    
+                    $scope.isAutheticated();
                 }
             }, function() {
                 $rootScope.error = 'Failed to signup';
@@ -49,14 +49,16 @@ angular.module('angularRestfulAuth')
             })
         };
 
-        $scope.logout = function() {
+        $scope.logout = function() {            
             Main.logout(function() {
-                window.location = "/"
+                $scope.isAutheticated();
             }, function() {
                 alert("Failed to logout!");
             });
         };
-        $scope.token = $localStorage.token;
+        $scope.isAutheticated = function() {
+            $scope.isAuthenticated = ($localStorage.token) ? true : false;
+        };        
     }])
 
 .controller('MeCtrl', ['$rootScope', '$scope', '$location', 'Main', function($rootScope, $scope, $location, Main) {
