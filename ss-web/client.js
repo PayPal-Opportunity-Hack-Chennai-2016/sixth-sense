@@ -20,10 +20,10 @@ app.get("/", function(req, res) {
     res.sendFile(__dirname+"/public/views/index.html");
 });
 
-app.get("/ejs", function(req, res) {
+app.get("/login", function(req, res) {
     //res.sendFile("./app/index.html");
     //res.sendFile(__dirname+"/public/template/index");
-    res.render('index', {});
+    res.render('login', {});
 });
 
 // Start Server
