@@ -22,7 +22,7 @@ var PostSchema   = new Schema({
     	type :String,
     	enum : ['OPEN','ASSIGNED','CLOSED']
     },
-    tags : []
+    tags : [String]
     
 });
 
