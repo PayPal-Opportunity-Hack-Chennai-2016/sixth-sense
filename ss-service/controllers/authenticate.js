@@ -3,7 +3,8 @@ var jwt        = require("jsonwebtoken");
 module.exports = {
    signUp  : signUp,
    signIn  : signIn,
-   getUser : getUser
+   getUser : getUser,
+   updateProfile : updateProfile
 }
 
 /*
@@ -52,6 +53,50 @@ function signUp(req,res,next){
 	
 }
 
+function updateProfile(req,res,next) {
+   if(! req.body.email || !req.body.location){
+        return res.status(400).json({
+          error : "Email/location missing"
+      });
+   }
+
+   User.findOne({email: req.body.email}, function(err, user) {
+        if(err) {
+           console.log(err);
+           return  res.status(500).json({
+                error : "Error while searching user"
+           });
+        }
+
+        if(user === null) {
+           return  res.status(404).json({
+                error : "No user exists"
+           });  
+        }
+
+        user.mobile = req.body.mobile;
+        user.location = req.body.location;
+        user.profession = req.body.profession;
+        user.skills = req.body.skills;
+        user.save(function(err, user) {
+            if(err) {
+                console.log(err);
+                return res.status(500).json({
+                  error : "Error occured while update profile"
+                });
+            }
+
+            if (user) {
+               console.log("User updated.");
+               return res.json({
+                         data: user,
+                         type: true
+                });
+            }
+        });  
+   });   
+}
+
 /*
   Login operation
   @param email
@@ -67,7 +112,7 @@ function signUp(req,res,next){
         if(err) {
            console.log(err);
            return  res.json({
-                error : "SignIn operation failed.",
+                error : "SignIn operation failed."
             });
         } 
 

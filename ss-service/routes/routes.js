@@ -14,9 +14,7 @@ router.get('/me',ensureAuthorized,authController.getUser);
 
 
 router.get('/profile',ensureAuthorized,authController.getUser);
-router.post('/profile', function updateProfile(){
-    res.json({});
-})
+router.post('/profile',ensureAuthorized,authController.updateProfile);
 
 // router.put('/country/:country_id',controller.updateCountry);
 // router.delete('/country/:country_id',controller.deleteCountry);

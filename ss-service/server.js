@@ -7,7 +7,8 @@ var mongoose   = require("mongoose");
 var app        = express();
 
 var port = process.env.PORT || 3001;
-var User     = require('./models/User');
+var User = require('./models/User');
+var Post = require('./models/posts');
 
 // Connect to DB
 var mongoURL = (process.env.MONGO_URL) ? process.env.MONGO_URL : "mongodb://localhost:27107/ohack";
