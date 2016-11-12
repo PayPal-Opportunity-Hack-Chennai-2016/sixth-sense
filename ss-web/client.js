@@ -23,7 +23,22 @@ app.get("/login", function(req, res) {
     res.render('login', {});
 });
 
+app.get("/register", function(req, res) {
+    //res.sendFile("./app/index.html");
+    //res.sendFile(__dirname+"/public/template/index");
+    res.render('register', {});
+});
+app.get("/profile", function(req, res) {
+    //res.sendFile("./app/index.html");
+    //res.sendFile(__dirname+"/public/template/index");
+    res.render('profile', {});
+});
 
+app.get("/home", function(req, res) {
+    //res.sendFile("./app/index.html");
+    //res.sendFile(__dirname+"/public/template/index");
+    res.render('home', {});
+});
 app.get("/blank", function(req, res) {
     //res.sendFile("./app/index.html");
     //res.sendFile(__dirname+"/public/template/index");
