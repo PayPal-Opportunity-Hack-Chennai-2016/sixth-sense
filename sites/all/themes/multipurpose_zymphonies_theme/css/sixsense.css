@@ -12,6 +12,7 @@
 article.node-add-post  header > h2.title,
 #block-view-posts-view-posts-listposts  article.node h2.title{
     border-bottom: 2px solid #3DB4D9 ;
+    font-size: 16px;
 }
 #block-view-posts-view-posts-listposts  article.node h2.title a:hover{
     color: #3DB4D9 ;
@@ -55,7 +56,7 @@ article.node-add-post  header > h2.title,
 }
 
 .field-name-field-posttags a::after {
- background: #fff;
+ background: #F7F7F7;
  border-bottom: 13px solid transparent;
  border-left: 10px solid #eee;
  border-top: 13px solid transparent;
@@ -123,4 +124,28 @@ fieldset.captcha.form-wrapper .fieldset-description{
 }
 #post-content #comments{
   display: block;
+}
+#overlay-content .slideshow,
+#overlay-content #footer,
+#overlay-content #header_wrapper{
+  display: none;
+}
+#overlay-content  #page-wrap{
+  margin-bottom: 10px
+}
+#overlay-content #post-content #edit-field-user-type-und .form-item{
+  margin-right: 15px;
+}
+#overlay-content #post-content #edit-field-user-type-und label{
+  font-weight: normal;
+}
+#overlay-content #post-content label{
+  font-weight: bold;
+}
+#overlay-content #post-content .form-type-checkbox{
+  display: inline-block;
+}
+#overlay-content #post-content #edit-submit{
+  background: #3DB4D9;
+  color: #fff;
 }
