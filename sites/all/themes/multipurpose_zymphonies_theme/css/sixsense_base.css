@@ -6,6 +6,12 @@ body{
 	background-color: #3DB4D9;
 	background-image: url(../images/footer-bg.png);
 }
+@media screen and (max-width: 640px){
+	#header_wrapper .top_right, #header_wrapper .top_left{
+		    margin: 0px;
+	}
+
+}
 #header{
 
 	height:88px;
@@ -22,6 +28,11 @@ body{
 #site-title a{
 
 	color:#ffffff;
+}
+@media screen and (max-width: 640px){
+	#site-title{	
+		margin-top: 30px;
+	}	
 }
 #site-description{
 	color:#ffffff;	
