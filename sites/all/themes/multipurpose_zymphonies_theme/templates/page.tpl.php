@@ -156,6 +156,7 @@
                     unset($page['content']['system_main']['default_message']);
             } 
 				print render($page['content']); 
+				
 			
 			?>
           </section>
