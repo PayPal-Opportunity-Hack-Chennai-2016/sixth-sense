@@ -136,7 +136,11 @@
               <?php if ($breadcrumb): print $breadcrumb; endif;?>
             </div>
           <?php endif; ?>
-
+ <?php if ($title): ?>
+        <h1 class="title" id="page-title">
+          <?php print $title; ?>
+        </h1>
+      <?php endif; ?>
           <section id="post-content" role="main">
             <?php print $messages; ?>
             <?php print render($title_prefix); ?>
