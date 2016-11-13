@@ -1,0 +1,66 @@
+<?php
+
+/**
+ * Implements hook_init().
+ */
+ function view_posts_init() {
+	
+	drupal_add_js(drupal_get_path('module', 'view_posts') . '/js/view_posts.js');
+	drupal_add_css(drupal_get_path('module', 'view_posts') . '/css/views_posts.css');
+}
+ 
+ /**
+ * Implements hook_menu().
+ */
+function view_posts_menu() {
+  $items['view-post'] = array(
+    'title' => 'Change Password',
+    'description' => 'Separate Change Password Form',
+    'page callback' => 'drupal_get_form',
+    //'page arguments' => array('change_pwd_page_form', 1),
+    //'access callback' => 'user_edit_access',
+   // 'access arguments' => array(1),
+    'type' => MENU_LOCAL_TASK,
+  );
+  return $items;
+}
+
+
+/**
+ * Implements hook_block_info().
+ */
+function view_posts_block_info() {
+  $blocks['view_posts-listposts'] = array(
+    'info' => t('List Posts'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+ 
+/**
+ * Implements hook_block_view().
+ */
+function view_posts_block_view($delta = '') {
+  $block = array();
+  global $user;
+  $ewrapper = entity_metadata_wrapper('user', $user);
+  $user_interest = $ewrapper->field_i_want_to_contribute->value();
+  
+  $termArry = array();
+  foreach($user_interest as $term) {
+	  $termArry[] = $term->tid;
+  }
+ 
+ $interestValues = implode('+', $termArry);
+ 
+ 
+  switch ($delta) {
+    case 'view_posts-listposts':
+      $block['subject'] = t('List Post');
+      $block['content'] = views_embed_view('view_posts', 'page', $interestValues );
+      break;
+  }
+  return $block;
+}
+
+

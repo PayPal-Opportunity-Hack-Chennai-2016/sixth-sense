@@ -1,0 +1,184 @@
+#block-view-posts-view-posts-listposts > h2{
+    margin: 0;
+   padding: 10px 0;
+   overflow: hidden;
+   text-align: left;
+}
+#block-view-posts-view-posts-listposts  article{
+    background-color: #F7F7F7 ;
+    border-radius: 5px;
+   padding: 15px;
+}
+article.node-add-post  header > h2.title,
+#block-view-posts-view-posts-listposts  article.node h2.title{
+    border-bottom: 2px solid #3DB4D9 ;
+    font-size: 16px;
+}
+#block-view-posts-view-posts-listposts  article.node h2.title a:hover{
+    color: #3DB4D9 ;
+}
+#block-view-posts-view-posts-listposts  article.node header span.submitted{
+    float: right;
+}
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-item,
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-items,
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-label{
+    display: inline-block;
+}
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-item{
+    margin-right: 5px;
+}
+
+.field-name-field-i-want-to-contribute a,
+.field-name-field-posttags a {
+ background: #eee;
+ border-radius: 3px 0 0 3px;
+ color: #999;
+ display: inline-block;
+ height: 26px;
+ line-height: 26px;
+ padding: 0 20px 0 23px;
+ position: relative;
+ margin: 0 10px 10px 0;
+ text-decoration: none;
+ -webkit-transition: color 0.2s;
+}
+.field-name-field-i-want-to-contribute a::before
+.field-name-field-posttags a::before {
+ background: #fff;
+ border-radius: 10px;
+ box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+ content: '';
+ height: 6px;
+ left: 10px;
+ position: absolute;
+ width: 6px;
+ top: 10px;
+}
+.field-name-field-i-want-to-contribute a::after,
+.field-name-field-posttags a::after {
+ background: #F7F7F7;
+ border-bottom: 13px solid transparent;
+ border-left: 10px solid #eee;
+ border-top: 13px solid transparent;
+ content: '';
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+.field-name-field-i-want-to-contribute a:hover,
+.field-name-field-posttags a:hover {
+ background-color: #4CE4E9 ;
+ color: white;
+}
+.field-name-field-i-want-to-contribute a:hover::after,
+.field-name-field-posttags a:hover::after {
+  border-left-color: #4CE4E9 ; 
+}
+#block-view-posts-view-posts-listposts  article.node footer{
+    margin-top: 10px;
+   margin-left: -5px;
+}
+.search-form fieldset.search-advanced{
+    display: none;
+}
+.node-add-post .field-name-field-user-type .field-item,
+.node-add-post .field-type-text-with-summary .field-item{
+	margin-left: 15px;
+}
+.comment-form label{
+	font-weight: bold;
+}
+.node-add-post .form-actions.form-wrapper{
+	display: inline-block;
+    width: 100%;
+}
+.node-add-post .form-actions.form-wrapper .form-submit{
+	float: right;
+	background: #3DB4D9;
+    color: #fff;
+}
+fieldset.collapsible.form-wrapper.collapse-processed legend,
+fieldset.captcha.form-wrapper legend{
+	background: #3DB4D9;
+	color: #fff;
+    border: 1px solid #ccc;
+    height: 30px;
+    top: 0;
+}
+fieldset.collapsible.form-wrapper.collapse-processed legend a{
+  color: #fff;
+}
+fieldset.captcha.form-wrapper .fieldset-description{
+	padding-top: 10px;
+}
+.tabs-wrapper{
+  border-bottom: 2px solid #3DB4D9;
+  margin-top: 20px;
+}
+.tabs-wrapper .tabs li.active a{
+  background: #3DB4D9;
+}
+.tabs-wrapper .tabs li a:hover{
+  background: rgba(61, 180, 217, 0.59);
+}
+.tabs-wrapper ul.primary li a{
+  line-height: 25px;
+  padding: 0 25px;
+}
+#post-content span.submitted{
+  float: right;
+}
+#post-content #comments{
+  display: block;
+}
+#overlay-content .slideshow,
+#overlay-content #footer,
+#overlay-content #header_wrapper{
+  display: none;
+}
+#overlay-content  #page-wrap{
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+#overlay-content #post-content #edit-field-user-type-und .form-item{
+  margin-right: 15px;
+}
+#overlay-content #post-content #edit-field-user-type-und label{
+  font-weight: normal;
+}
+#overlay-content #post-content label{
+  font-weight: bold;
+}
+#overlay-content #post-content .form-type-checkbox{
+  display: inline-block;
+}
+.region-search .form-submit{
+  background: url('../images/search-icon.png') no-repeat center !important;
+}
+input#edit-submit{
+  background: #3DB4D9;
+  color: #fff;
+}
+#post-content .comment-submitted{
+  text-align: left;
+}
+.field-name-field-posttags .field-item,
+.field-name-field-i-want-to-contribute .field-item{
+  display: inline-block;
+}
+.field-name-field-location .field-items,
+.field-name-field-location .field-item,
+.field-name-field-location .field-label,
+.field-name-field-mobile-number .field-items,
+.field-name-field-mobile-number .field-item,
+.field-name-field-mobile-number .field-label{
+  display: inline-block;
+}
+.profile h3{
+  border-bottom: 2px solid #3DB4D9 ;
+}
+.comment .attribution{
+  padding: 0px 10px 0 10px;
+
+}

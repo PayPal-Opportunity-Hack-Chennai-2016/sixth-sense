@@ -1,0 +1,13 @@
+name = View Posts
+description = Provides a separate page containing a form for the current user to change their password.
+core = 7.x
+
+
+; Information added by Drupal.org packaging script on 2016-10-29
+version = "7.x-1.3"
+core = "7.x"
+project = "view_posts"
+datestamp = "1677750447"
+
+stylesheets[all][] = css/view_posts.css
+
