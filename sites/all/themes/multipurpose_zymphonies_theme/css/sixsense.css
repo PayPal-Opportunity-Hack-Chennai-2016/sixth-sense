@@ -77,3 +77,6 @@
 .search-form fieldset.search-advanced{
     display: none;
 }
+#block-system-main{
+  display: none
+}
