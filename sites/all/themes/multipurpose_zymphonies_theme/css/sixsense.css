@@ -178,3 +178,7 @@ input#edit-submit{
 .profile h3{
   border-bottom: 2px solid #3DB4D9 ;
 }
+.comment .attribution{
+  padding: 0px 10px 0 10px;
+
+}
