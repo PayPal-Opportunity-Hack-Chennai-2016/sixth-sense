@@ -1,8 +1,10 @@
 #block-view-posts-view-posts-listposts > h2{
     margin: 0;
    padding: 10px 0;
+   font-size:20px;
    overflow: hidden;
    text-align: left;
+   color: #3DB4D9;
 }
 #block-view-posts-view-posts-listposts  article{
     background-color: #F7F7F7 ;
@@ -73,7 +75,7 @@ article.node-add-post  header > h2.title,
 }
 .field-name-field-i-want-to-contribute a:hover::after,
 .field-name-field-posttags a:hover::after {
-  border-left-color: #4CE4E9 ; 
+  border-left-color: #4CE4E9 ;
 }
 #block-view-posts-view-posts-listposts  article.node footer{
     margin-top: 10px;
@@ -180,5 +182,10 @@ input#edit-submit{
 }
 .comment .attribution{
   padding: 0px 10px 0 10px;
-
+}
+.node h2.title a, .page-title a{
+	color:#333;
+}
+.node-add-post .field-type-text-with-summary{
+	margin-top: 15px;
 }
