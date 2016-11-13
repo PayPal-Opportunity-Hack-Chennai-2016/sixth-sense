@@ -1,6 +1,12 @@
 body{
 	background-color: #fff;
-
+	margin-bottom: 130px;
+}
+@media screen and (max-width: 960px){
+	
+	body{
+		margin-bottom: 0;
+	}
 }
 #header_wrapper{
 	background-color: #3DB4D9;
@@ -61,9 +67,22 @@ body{
 }
 #footer{
 	margin-top: 30px;
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+@media screen and (max-width: 960px){
+	#footer{
+		position: relative;
+	}
+
 }
 .footer_credit{
 	background: #333333;
+}
+.credits{
+	background-color: #fff;
 }
 
 .hidden{
