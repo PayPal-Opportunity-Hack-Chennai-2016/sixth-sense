@@ -29,6 +29,7 @@ article.node-add-post  header > h2.title,
     margin-right: 5px;
 }
 
+.field-name-field-i-want-to-contribute a,
 .field-name-field-posttags a {
  background: #eee;
  border-radius: 3px 0 0 3px;
@@ -42,7 +43,7 @@ article.node-add-post  header > h2.title,
  text-decoration: none;
  -webkit-transition: color 0.2s;
 }
-
+.field-name-field-i-want-to-contribute a::before
 .field-name-field-posttags a::before {
  background: #fff;
  border-radius: 10px;
@@ -54,7 +55,7 @@ article.node-add-post  header > h2.title,
  width: 6px;
  top: 10px;
 }
-
+.field-name-field-i-want-to-contribute a::after,
 .field-name-field-posttags a::after {
  background: #F7F7F7;
  border-bottom: 13px solid transparent;
@@ -65,10 +66,12 @@ article.node-add-post  header > h2.title,
  right: 0;
  top: 0;
 }
+.field-name-field-i-want-to-contribute a:hover,
 .field-name-field-posttags a:hover {
  background-color: #4CE4E9 ;
  color: white;
 }
+.field-name-field-i-want-to-contribute a:hover::after,
 .field-name-field-posttags a:hover::after {
   border-left-color: #4CE4E9 ; 
 }
@@ -95,12 +98,16 @@ article.node-add-post  header > h2.title,
 	background: #3DB4D9;
     color: #fff;
 }
+fieldset.collapsible.form-wrapper.collapse-processed legend,
 fieldset.captcha.form-wrapper legend{
 	background: #3DB4D9;
 	color: #fff;
     border: 1px solid #ccc;
     height: 30px;
     top: 0;
+}
+fieldset.collapsible.form-wrapper.collapse-processed legend a{
+  color: #fff;
 }
 fieldset.captcha.form-wrapper .fieldset-description{
 	padding-top: 10px;
@@ -131,7 +138,8 @@ fieldset.captcha.form-wrapper .fieldset-description{
   display: none;
 }
 #overlay-content  #page-wrap{
-  margin-bottom: 10px
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 #overlay-content #post-content #edit-field-user-type-und .form-item{
   margin-right: 15px;
@@ -145,7 +153,28 @@ fieldset.captcha.form-wrapper .fieldset-description{
 #overlay-content #post-content .form-type-checkbox{
   display: inline-block;
 }
-#overlay-content #post-content #edit-submit{
+.region-search .form-submit{
+  background: url('../images/search-icon.png') no-repeat center !important;
+}
+input#edit-submit{
   background: #3DB4D9;
   color: #fff;
+}
+#post-content .comment-submitted{
+  text-align: left;
+}
+.field-name-field-posttags .field-item,
+.field-name-field-i-want-to-contribute .field-item{
+  display: inline-block;
+}
+.field-name-field-location .field-items,
+.field-name-field-location .field-item,
+.field-name-field-location .field-label,
+.field-name-field-mobile-number .field-items,
+.field-name-field-mobile-number .field-item,
+.field-name-field-mobile-number .field-label{
+  display: inline-block;
+}
+.profile h3{
+  border-bottom: 2px solid #3DB4D9 ;
 }
