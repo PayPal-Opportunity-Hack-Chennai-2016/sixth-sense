@@ -5,6 +5,8 @@ core = 7.x
 engine = phptemplate
 stylesheets[all][] = css/font-awesome.css
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/sixsense.css
+stylesheets[all][] = css/sixsense_base.css
 stylesheets[all][] = css/media.css
 scripts[] = js/custom.js
 

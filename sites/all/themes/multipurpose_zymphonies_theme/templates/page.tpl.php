@@ -140,9 +140,7 @@
           <section id="post-content" role="main">
             <?php print $messages; ?>
             <?php print render($title_prefix); ?>
-            <?php if ($title): ?>
-              <h1 class="page-title"><?php print $title; ?></h1>
-            <?php endif; ?>
+            
             <?php print render($title_suffix); ?>
             <?php if (!empty($tabs['#primary'])): ?>
               <div class="tabs-wrapper"><?php print render($tabs); ?></div>
@@ -151,7 +149,15 @@
             <?php if ($action_links): ?>
               <ul class="action-links"><?php print render($action_links); ?></ul>
             <?php endif; ?>
-            <?php print render($page['content']); ?>
+            <?php //print render($page['content']); 
+			
+			 if(drupal_is_front_page())
+                {
+                    unset($page['content']['system_main']['default_message']);
+            } 
+        print render($page['content']); 
+			
+			?>
           </section>
         </div>
       
@@ -238,7 +244,7 @@
 
   </div>
   <div class="credits">
-    <?php print t('Design by'); ?><a href="http://www.zymphonies.com"> Zymphonies</a>
+    <?php print t('Design by'); ?><a href="http://www.PayPal.com"> PayPal</a>
   </div>
 
 </div>
