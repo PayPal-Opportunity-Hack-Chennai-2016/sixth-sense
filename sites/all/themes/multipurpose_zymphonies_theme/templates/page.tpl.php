@@ -77,8 +77,10 @@
         <div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
       <?php endif; ?>
       <h1 id="site-title">
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-        <div id="site-description"><?php print $site_slogan; ?></div>
+
+        <!--a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a-->
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_slogan; ?></a>
+        <!--div id="site-description"></div-->
       </h1>
     </div>
   </header>

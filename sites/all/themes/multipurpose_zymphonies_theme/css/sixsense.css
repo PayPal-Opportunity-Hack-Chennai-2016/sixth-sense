@@ -1,0 +1,79 @@
+#block-view-posts-view-posts-listposts > h2{
+    margin: 0;
+   padding: 10px 0;
+   overflow: hidden;
+   text-align: left;
+}
+#block-view-posts-view-posts-listposts  article{
+    background-color: #F7F7F7 ;
+    border-radius: 5px;
+   padding: 15px;
+}
+#block-view-posts-view-posts-listposts  article.node h2.title{
+    border-bottom: 2px solid #3DB4D9 ;
+}
+#block-view-posts-view-posts-listposts  article.node h2.title a:hover{
+    color: #3DB4D9 ;
+}
+#block-view-posts-view-posts-listposts  article.node header span.submitted{
+    float: right;
+}
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-item,
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-items,
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-label{
+    display: inline-block;
+}
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-item{
+    margin-right: 5px;
+}
+
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-item a {
+ background: #eee;
+ border-radius: 3px 0 0 3px;
+ color: #999;
+ display: inline-block;
+ height: 26px;
+ line-height: 26px;
+ padding: 0 20px 0 23px;
+ position: relative;
+ margin: 0 10px 10px 0;
+ text-decoration: none;
+ -webkit-transition: color 0.2s;
+}
+
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-item a::before {
+ background: #fff;
+ border-radius: 10px;
+ box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+ content: '';
+ height: 6px;
+ left: 10px;
+ position: absolute;
+ width: 6px;
+ top: 10px;
+}
+
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-item a::after {
+ background: #fff;
+ border-bottom: 13px solid transparent;
+ border-left: 10px solid #eee;
+ border-top: 13px solid transparent;
+ content: '';
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-item a:hover {
+ background-color: #4CE4E9 ;
+ color: white;
+}
+#block-view-posts-view-posts-listposts  article.node .content.node-add-post .field .field-item a:hover::after {
+  border-left-color: #4CE4E9 ; 
+}
+#block-view-posts-view-posts-listposts  article.node footer{
+    margin-top: 10px;
+   margin-left: -5px;
+}
+.search-form fieldset.search-advanced{
+    display: none;
+}

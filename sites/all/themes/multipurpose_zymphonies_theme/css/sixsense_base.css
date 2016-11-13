@@ -1,0 +1,51 @@
+body{
+	background-color: #fff;
+
+}
+#header_wrapper{
+	background-color: #3DB4D9;
+	background-image: url(../images/footer-bg.png);
+}
+#header{
+
+	height:88px;
+	
+}
+#logo img{
+	width:80px;
+
+}
+.top_left{
+	margin: 4px 0px;
+
+}
+#site-title a{
+
+	color:#ffffff;
+}
+#site-description{
+	color:#ffffff;	
+}
+.menu-wrap{
+    border-bottom: 1px solid #ebebeb;
+    background: #f7f8fa;
+
+}
+#main-menu a{
+	padding: 25px 25px;
+	color:#000;
+
+}
+#main-menu li a.active{
+	border-bottom-color:  #3DB4D9;
+	color:#3DB4D9;
+}
+.region-search{
+
+	    margin: 18px 0;
+
+}
+
+.footer_credit{
+	background: #333333;
+}
